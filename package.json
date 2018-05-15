@@ -1,0 +1,24 @@
+{
+  "name": "posthtml-external-link-target-blank",
+  "version": "1.0.0",
+  "description": "Adds HTML to open external links in new windows",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "node_modules/.bin/eslint src/*.js spec/*.js",
+    "pretest": "npm run lint",
+    "test": "istanbul cover node_modules/jasmine/bin/jasmine.js"
+  },
+  "keywords": [
+    "posthtml",
+    "posthtml-plugin"
+  ],
+  "author": "Bashkim Isai",
+  "license": "MIT",
+  "devDependencies": {
+    "posthtml": "^0.11.3",
+    "eslint": "^4.19.1",
+    "expect": "^22.4.3",
+    "istanbul": "^0.4.5",
+    "jasmine": "^3.1.0"
+  }
+}
