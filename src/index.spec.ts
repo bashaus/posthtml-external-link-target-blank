@@ -1,5 +1,5 @@
 import posthtml from "posthtml";
-import ExternalLinks from ".";
+import externalLinks from ".";
 
 describe("new window external link", () => {
   it("generates with default values", async () => {
@@ -153,7 +153,7 @@ describe("new window external link", () => {
 });
 
 async function transform(input: string, options = {}) {
-  const response = await posthtml().use(ExternalLinks(options)).process(input);
+  const response = await posthtml().use(externalLinks(options)).process(input);
 
   return response.html;
 }

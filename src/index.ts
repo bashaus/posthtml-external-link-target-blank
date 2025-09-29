@@ -7,7 +7,7 @@ export type ExternalLinksOptions = {
   noreferrer: boolean;
 };
 
-export default function ExternalLinks(
+export default function externalLinks(
   options: Partial<ExternalLinksOptions> = {},
 ) {
   const useOptions: ExternalLinksOptions = {
