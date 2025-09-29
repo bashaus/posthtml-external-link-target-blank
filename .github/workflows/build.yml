@@ -1,5 +1,5 @@
 ---
-name: lint
+name: build
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
       - "*"
 
 jobs:
-  lint:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,8 +22,5 @@ jobs:
       - name: install
         run: npm ci
 
-      - name: prettier
-        run: npx prettier --check .
-
-      - name: lint
-        run: npm run lint
+      - name: build
+        run: npm run build
