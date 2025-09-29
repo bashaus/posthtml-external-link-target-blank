@@ -1,9 +1,8 @@
 # posthtml-external-link-target-blank
 
 [![npm version][img:npm]][url:npm]
-[![build status][img:build-status]][url:build-status]
 
-> Adds HTML so external links will open in a new window
+Adds HTML so external links will open in a new window
 
 ## Installation
 
@@ -52,9 +51,6 @@ const outputHTML = posthtml()
 ```
 
 [url:posthtml]: https://github.com/posthtml/posthtml
-
-[img:build-status]: https://travis-ci.org/bashaus/posthtml-external-link-target-blank.svg
-[url:build-status]: https://travis-ci.org/bashaus/posthtml-external-link-target-blank
 
 [img:npm]: https://img.shields.io/npm/v/posthtml-external-link-target-blank.svg
 [url:npm]: https://www.npmjs.com/package/posthtml-external-link-target-blank
