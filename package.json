@@ -1,6 +1,6 @@
 {
   "name": "posthtml-external-link-target-blank",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Adds tags so external links will open in a new window.",
   "keywords": [
     "posthtml",
