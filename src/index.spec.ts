@@ -19,8 +19,14 @@ describe("new window external link", () => {
   });
 
   it("keeps existing rel tags", async () => {
-    const output = await transform('<a rel="noopener">Example</a>');
-    expect(output).toEqual('<a rel="noopener">Example</a>');
+    const output = await transform(
+      '<a href="https://www.example.com" rel="example">Example</a>',
+      {},
+    );
+
+    expect(output).toEqual(
+      '<a href="https://www.example.com" rel="example noopener noreferrer" target="_blank">Example</a>',
+    );
   });
 
   it("marks up external links", async () => {
