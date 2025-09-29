@@ -1,8 +1,9 @@
 # posthtml-external-link-target-blank
 
-[![npm version][img:npm]][url:npm]
+[![github actions build][img:gh-build]][url:gh-build]
+[![code coverage][img:codecov]][url:codecov]
 
-Adds HTML so external links will open in a new window
+Adds tags so external links will open in a new window.
 
 ## Installation
 
@@ -65,5 +66,7 @@ Whether or not to include `rel="noreferrer"` in the link tag.
 - Default value is: `true`
 
 [url:posthtml]: https://github.com/posthtml/posthtml
-[img:npm]: https://img.shields.io/npm/v/posthtml-external-link-target-blank.svg
-[url:npm]: https://www.npmjs.com/package/posthtml-external-link-target-blank
+[img:codecov]: https://codecov.io/gh/bashaus/posthtml-external-link-target-blank/graph/badge.svg?token=D79154VC17
+[url:codecov]: https://codecov.io/gh/bashaus/posthtml-external-link-target-blank
+[img:gh-build]: https://github.com/bashaus/posthtml-external-link-target-blank/actions/workflows/build.yml/badge.svg
+[url:gh-build]: https://github.com/bashaus/posthtml-external-link-target-blank/actions/workflows/build.yml
