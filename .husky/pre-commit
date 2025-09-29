@@ -1,0 +1,5 @@
+#!/bin/sh
+npx sort-package-json
+npx prettier --check .
+npm run lint
+npm test

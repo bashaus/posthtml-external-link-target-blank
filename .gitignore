@@ -1,3 +1,6 @@
-.DS_Store
+/dist/
 /coverage/
 /node_modules/
+
+.DS_Store
+junit.xml
