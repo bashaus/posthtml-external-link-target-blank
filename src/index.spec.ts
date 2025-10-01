@@ -115,7 +115,7 @@ describe("new window external link", () => {
       );
     });
 
-    it("excludes when true", async () => {
+    it("excludes when false", async () => {
       const output = await transform('<a href="http://www.example.com/"></a>', {
         noopener: false,
         noreferrer: true,
@@ -139,7 +139,7 @@ describe("new window external link", () => {
       );
     });
 
-    it("excludes when true", async () => {
+    it("excludes when false", async () => {
       const output = await transform('<a href="http://www.example.com/"></a>', {
         noopener: true,
         noreferrer: false,
@@ -154,6 +154,5 @@ describe("new window external link", () => {
 
 async function transform(input: string, options = {}) {
   const response = await posthtml().use(externalLinks(options)).process(input);
-
   return response.html;
 }
