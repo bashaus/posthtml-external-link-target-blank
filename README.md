@@ -17,8 +17,7 @@ npm install posthtml posthtml-external-link-target-blank
 import posthtml from "posthtml";
 import externalLinks from "posthtml-external-link-target-blank";
 
-const inputHTML =
-  '<a href="http://www.example.com/">lorem ipsum dolar sit a met</div>';
+const inputHTML = '<a href="http://www.example.com/">lorem ipsum dolar sit a met</div>';
 
 const output = await posthtml().use(externalLinks()).process(inputHTML);
 const outputHTML = output.html;
@@ -41,8 +40,7 @@ Example:
 import posthtml from "posthtml";
 import externalLinks from "posthtml-external-link-target-blank";
 
-const inputHTML =
-  '<a href="http://www.example.com/">lorem ipsum dolar sit a met</div>';
+const inputHTML = '<a href="http://www.example.com/">lorem ipsum dolar sit a met</div>';
 
 const output = await posthtml()
   .use(externalLinks({ excludeHosts: ["example.com", "www.example.com"] }))
