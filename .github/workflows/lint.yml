@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
         with:
-          node-version: "24.x"
+          node-version: "22.x"
           cache: "npm"
 
       - name: install
@@ -27,4 +27,4 @@ jobs:
         run: npx prettier --check .
 
       - name: lint
-        run: npm run lint
+        run: npx eslint .
