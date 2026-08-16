@@ -73,6 +73,16 @@ describe("new window external link", () => {
   });
 
   describe("#excludeHosts", () => {
+    it("skips the exclusion guard when hosts are undefined", async () => {
+      const output = await transform('<a href="http://www.example.com/"></a>', {
+        excludeHosts: undefined,
+      });
+
+      expect(output).toEqual(
+        '<a href="http://www.example.com/" target="_blank" rel="noopener noreferrer"></a>',
+      );
+    });
+
     it("ignores a single domain", async () => {
       const output = await transform('<a href="http://www.example.com/"></a>', {
         excludeHosts: ["localhost"],

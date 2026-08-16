@@ -66,5 +66,5 @@ Whether or not to include `rel="noreferrer"` in the link tag.
 [url:posthtml]: https://github.com/posthtml/posthtml
 [img:codecov]: https://codecov.io/gh/bashaus/posthtml-external-link-target-blank/graph/badge.svg?token=D79154VC17
 [url:codecov]: https://codecov.io/gh/bashaus/posthtml-external-link-target-blank
-[img:gh-build]: https://github.com/bashaus/posthtml-external-link-target-blank/actions/workflows/build.yml/badge.svg
-[url:gh-build]: https://github.com/bashaus/posthtml-external-link-target-blank/actions/workflows/build.yml
+[img:gh-build]: https://github.com/bashaus/posthtml-external-link-target-blank/actions/workflows/test.yaml/badge.svg
+[url:gh-build]: https://github.com/bashaus/posthtml-external-link-target-blank/actions/workflows/test.yaml

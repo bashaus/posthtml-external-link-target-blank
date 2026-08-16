@@ -1,5 +1,4 @@
 import PostHTML from "posthtml";
-import url from "url";
 
 export type ExternalLinksOptions = {
   excludeHosts: Array<string>;
@@ -25,19 +24,15 @@ export default function externalLinks(
         return node;
       }
 
-      const link = url.parse(
-        node.attrs["href"],
-        /* parseQueryString */ false,
-        /* slashesDenoteHost */ true,
-      );
+      const link = new URL(node.attrs["href"], "http://posthtml");
 
       // Must change hosts
-      if (!link.hostname) {
+      if (link.hostname === "posthtml") {
         return node;
       }
 
       if (useOptions.excludeHosts) {
-        const shouldExclude = useOptions.excludeHosts.find(
+        const shouldExclude = useOptions.excludeHosts.some(
           (hostname) => hostname == link.hostname,
         );
 
